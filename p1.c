@@ -91,19 +91,6 @@ BOOL Line(HDC hdc, int x1, int y1, int x2, int y2){
     return LineTo(hdc, x2, y2);
 }
 
-//Функция дорисовки стрелок из примера
-/*void Arrow(HDC hdc, double fi, int px, int py){
-    fi = pi*(180.0 - fi)/180.0;
-    int lx,ly,rx,ry;
-    lx = px+15*cos(fi+0.3);
-    rx = px+15*cos(fi-0.3);
-    ly = py+15*sin(fi+0.3);
-    ry = py+15*sin(fi-0.3);
-    MoveToEx(hdc, lx, ly, NULL);
-    LineTo(hdc, px, py);
-    LineTo(hdc, rx, ry);
-}*/
-
 //Функция дорисовки наконечника стрелок
 void Arrowhead(HDC hdc, int x1, int y1, int x2, int y2){
     double fi;
